@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.underline {
+  text-decoration: underline;
+  padding: 4px 4px;
+}
+
+.underline:hover {
+  text-decoration: none;
+}
+
+.Hover:hover {
+  border: 1px solid white;
+}
+
+.scale {
+  transition-duration: 0.5s;
+  /* background-color: rgba(0, 0, 0, 0.08) */
+}
+
+.scale:hover {
+  transform: scale(1.1);
+}
+
+.animate-charcter {
+  /* text-transform: uppercase; */
+  background-image: linear-gradient(-225deg,
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: 4vw;
+  font-weight: 900;
+
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.black-lives-matter {
+  /* text-transform: uppercase; */
+
+  font-size: 6vw;
+  line-height: 8vw;
+  margin: 0;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 900;
+  background: url(https://raw.githubusercontent.com/s1mpson/-/master/codepen/black-lives-matter/victim-collage.png);
+  background-size: 40%;
+  background-position: 50% 50%;
+  -webkit-background-clip: text;
+  color: rgba(0, 0, 0, 0.08);
+  animation: zoomout 10s infinite 500ms forwards;
+}
+
+@keyframes zoomout {
+  from {
+    background-size: 40%;
+  }
+
+  to {
+    background-size: 10%;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height:90vh;
+}
+
+.swiper-slide {
+  /* text-align: center; */
+  font-size: 18px;
+  /* position: relative; */
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* background-size: 100% 100%; */
+}
+.font_family{
+  font-family:'Red Hat Display', sans-serif; ;
+  position: absolute;
+  /* border-right: 2px solid red; */
+  animation-name: heading;
+  animation-duration: 3.2s;
+  animation-iteration-count:infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  animation-timing-function:steps(20);
+  animation-direction:initial;
+  top:60%;
+  left: 10%;
+} 
+@keyframes heading{
+  0%{ width: 0ch;
+  ;
+}
+  100%{width: 25ch; 
+  }
+}
+
+.show_li{
+  display: none ;
+}
+.show:hover .show_li{
+  display: block;
+}
+.btn:hover{
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
