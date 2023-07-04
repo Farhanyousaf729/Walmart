@@ -6,6 +6,8 @@ const FinalProduct = (props) => {
     const [mypic,setmypic] = useState("")
     const [storage, setstorage] = useLocalStorage(`data`, [])
     const [state, setstate] = useState(props.data)
+
+
     const handleClick = () => {
         let price = props.data.price * props.data.discount / 100
            let disc = props.data.price - price
@@ -20,6 +22,8 @@ const FinalProduct = (props) => {
         setstorage(Obj)
 
     }
+
+    
     const handlChange =(ele)=>{
         setmypic(ele)
     }
